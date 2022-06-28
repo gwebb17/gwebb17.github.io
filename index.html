@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Grant Webb</title>
+        <link rel="stylesheet" type="text/css" href="Portfolio.website.assignment.css">
+    </head>
+
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--To add breaks between navbar and first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Computer_Video">
+                <source src="Computer.vid.mp4.crdownload" type="video/mp4">
+                <!--Display if video fails-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video Text**make video black and white**-->
+        <div class="Video_Text">
+            <h1 class="white-text">Grant Webb's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <br>
+                    <br>A brief introduction to my professional history and experience.
+                    <br>
+                    <br>I appreciate your time!
+                </p>
+            </strong>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="mountain2.jpg" alt="mountain">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I love to create, learn, and figure things out. Whether it's composing and performing music, or learning new coding languages and techniques; I do my best to ensure my brain is never bored.
+                    <br>
+                    <br>I recently graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and was trained and tested in the following languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I'm a full-stack developer and love to work with people/collaborate. Don't hesitate to reach out. <a href="#Contact">Contact</a> information listed below
+                </p>
+            </div>
+        </div> 
+        
+        <!--Github Section-->
+        <div class="Row" id="GitHub">
+            <!--LeftColumn-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    GitHub link with coding projects:
+                    <br>
+                    <p class="center"><a href="https://github.com/gwebb17" target="_blank">Grant Webb's GitHub</a></p>
+                </p>
+            </div>
+            <!--RightColumn-->
+            <div class="Column_2">
+                <a href="https://github.com/gwebb17" target="_blank"><img src="GitHub.png"
+                    alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="phone.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact Form, right Column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This is where and how to send form data/leaving blank-->
+                <form action="" method="POST"> <!--utilizing 3rd party service to submit, insert your formspree endpoint in the action attribute-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
