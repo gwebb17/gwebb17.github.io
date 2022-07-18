@@ -258,8 +258,7 @@ footer {
 /*slideshow text*/
 .text {
   color:white;
-  padding:1vw;
-  position:absolute; /*ensures text is positioned within image*/
+  padding:0vw;
   bottom:0; /*sets text to bottom of page*/
   width:100%; /*element covers full width of image*/
   text-align:center;
