@@ -1,14 +1,3 @@
 # gwebb17.github.io
 
-JavaScript Projects.
-
-Some projects I completed during this course:
--Pizza Menu
--Tic Tac Toe Game
--Calculator
-
-Pizza Menu:
-Using the user selected toppings and size, the project calculates total cost and displays it for customer.
-
-Tic Tac Toe Game:
-Computer plays against the human opponent and corresponding sounds and animations are performed in time with either players choices as they occur.
+In this index.html is a portfolio I created using a variety of languages and techniques learned at The Tech Academy. I gained a lot of experience and knowledge by revising this code several times as I learned more and made sure to customize it as much as possible with my current understanding.
