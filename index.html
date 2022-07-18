@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Grant Webb</title>
         <link rel="stylesheet" type="text/css" href="Portfolio.website.assignment.css">
+        
     </head>
 
     <body class="Background">
@@ -43,6 +44,59 @@
             </strong>
         </div>
 
+
+        <!--Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Slideshow/selfphotocropsized.jpg" alt="Self photo">
+                        <div class="text">I'd love to help work on your project!</div>
+                    </div>
+                    <!--Slide 2-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Slideshow/usehtmlcropsized.jpg" alt="HTML, CSS, and JS Logos">
+                        <div class="text"> As a full stack developer, I am trained in HTML, CSS, JavaScript</div>
+                    </div>
+                    <!--slide 3-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Slideshow/pythoncropsized.jpg" alt="Python logo">
+                        <div class="text">As well as the popular language Python,</div>
+                    </div>
+                    <!--Slide 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Slideshow/microsoftcropsized.png" alt="C#">
+                        <div class="text">C#, .Net Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!--Slide 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./SlideShow/SQLcropsized.jpg" alt="SQL logo">
+                        <div class="text">back end development, databses and SQL.</div>
+                    </div>
+                    <!--Slide 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Slideshow/Pianocropsized.jpg" alt="Computer/Final slide">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Let's get started, contact me now!</a></div>
+                    </div>
+                    <!--Previous and next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!--adds space between slideshow images and dots-->
+
+                <!--slideshow dots/another way to navigate-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentslide(6)"></span>
+                </div>
+            </div>
+        </div>
+
         <!--About Section-->
         <div class="Row" id="About">
             <!--Left Column-->
@@ -57,7 +111,7 @@
                     <br>
                     <br>I recently graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and was trained and tested in the following languages: HTML, CSS, JavaScript, SQL, C# and more.
                     <br>
-                    <br>I'm a full-stack developer and love to work with people/collaborate. Don't hesitate to reach out. <a href="#Contact">Contact</a> information listed below
+                    <br>I'm a full-stack developer and love to work with people/collaborate. Don't hesitate to reach out. <a href="#Contact">Contact link</a> 
                 </p>
             </div>
         </div> 
@@ -66,11 +120,15 @@
         <div class="Row" id="GitHub">
             <!--LeftColumn-->
             <div class="Column_1">
-                <h1>GitHub</h1>
+                <h1>GitHub/LinkedIn</h1>
                 <p>
                     GitHub link with coding projects:
                     <br>
                     <p class="center"><a href="https://github.com/gwebb17" target="_blank">Grant Webb's GitHub</a></p>
+                <p>
+                    Connect on LinkedIn:
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/grant-webb-2a181016b/" target="_blank">& LinkedIn</a></p>
                 </p>
             </div>
             <!--RightColumn-->
@@ -88,9 +146,37 @@
             </div>
             <!--Contact Form, right Column-->
             <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This is where and how to send form data/leaving blank-->
-                <form action="" method="POST"> <!--utilizing 3rd party service to submit, insert your formspree endpoint in the action attribute-->
+
+                <div id="Contact">
+                    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                    <div class="form-popup" id="myForm">
+                        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--here we are using free online service from formspree to send our contact form to email address , won't run unless live on the internet you have to push to your online website first-->
+                            <h1>Contact</h1>
+                            <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Type your name here" name="name" required>
+                            <label for="phone"><b>Phone</b></label>
+                                <input type="text" placeholder="Type your phone number here" name="phone">
+                            <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Type your email address here" name="email" required>
+                            <label for="message"><b>Message</b></label>
+                                <input type="text" placeholder="Type your message here" name="message">
+                            <button type="submit" class="btn">SUBMIT</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                        </form>
+                    </div>
+                </div>
+            
+
+                <!--to finish-->
+                <!-- 
+            
+                -make contact link go to form instead of section target the openform function using #Contact ID/maybe need event listener for onclick event on contact navbar, try using flexwrap on contact row and footer and justify content?
+                 -->
+            
+            
+            
+                <!--This is where and how to send form data/leaving blank THIS IS OG CODE UPDATING BELOW BUT SAVING JUST IN CASE-->
+                <!-- <form action="" method="POST"> 
                     <label>Name:</label>
                         <input type="text" placeholder="Please enter your name here">
                     <label>Email:</label>
@@ -100,14 +186,35 @@
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
+        </div> -->
+
+        <!--NEW CONTACT FORM-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--here we are using free online service from formspree to send our contact form to email address , won't run unless live on the internet you have to push to your online website first-->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
         </div>
 
         <!--Footer section-->
         <footer>
-            <p>
+            
                 <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
+                
+            
         </footer>
+        <script src="Portfolio.website.js"></script>
     </body>
 </html>
