@@ -1,583 +1,597 @@
 /*General Styling*/
 /*Body*/
 body {
-    margin:0%; /*ensures site displays all the way to edge of browser screen*/
-    transition:3s opacity;
-    letter-spacing: 2.vw; /*vw is a relative measurement, 1vw is equal to 1% of viewport width*/
-    font-family:Garamond, Times New Roman;
-    font-size:1.5vw;
-    overflow-x:hidden; /*this prevents horiztonal scroll bar from appearing when the quote is hovered over*/
-    user-select:none; /*this prevents txt on webpage from being highlighted by user*/
+  margin:0%; /*ensures site displays all the way to edge of browser screen*/
+  transition:3s opacity;
+  letter-spacing: 2.vw; /*vw is a relative measurement, 1vw is equal to 1% of viewport width*/
+  font-family:Garamond, Times New Roman;
+  font-size:1.5vw;
+  overflow-x:hidden; /*this prevents horiztonal scroll bar from appearing when the quote is hovered over*/
+  user-select:none; /*this prevents txt on webpage from being highlighted by user*/
 
 }
 
 /*this section contributes to fade effect for page that occurs when page is loaded*/
 body.fade-out {
-  opacity: .1;
+opacity: .1;
 }
 /*Heading 1 elements*/
 h1 {
-    text-transform:uppercase;/*Capitalizing all h1 headings*/
-    font-family:Garamond, Times New Roman;
-    text-align:center;/*Centering all h1 elements*/
-    margin-top:3%;/*Adds a small margin above h1 elements*/
-    color:white;
+  text-transform:uppercase;/*Capitalizing all h1 headings*/
+  font-family:Garamond, Times New Roman;
+  text-align:center;/*Centering all h1 elements*/
+  margin-top:3%;/*Adds a small margin above h1 elements*/
+  color: black;
 }
 
 /*Heading 1 element hover effect*/
 h1:hover {
-    background-color:gold;
-    color:rgb(238, 238, 238);
-    background:fixedlinear-gradient(90deg,#FF5733 50%,#1a1a1a)
-    var(--_p,100%)/200% no-repeat;
-    -webkit-background-clip:text;
-        background-clip:text;
-        transition:1s;
+  background-color:gold;
+  color:rgb(238, 238, 238);
+  background:fixedlinear-gradient(90deg,#FF5733 50%,#1a1a1a)
+  var(--_p,100%)/200% no-repeat;
+  -webkit-background-clip:text;
+      background-clip:text;
+      transition:1s;
 }
 /*Styling for portfolio title text*/
 .white-text {
-    color:rgb(246,204,204);
-    padding-top:5vh; 
+  color:rgb(246,204,204);
+  padding-top:5vh; 
 }
 /*Paragraph elements*/
 p {
-    font-family:Garamond, Times New Roman;
-    text-align:justify;
-    letter-spacing:1px;
-    font-size:20px;
-    padding-left:20px;
-    padding-right:20px;
-    color:white
+  font-family:Garamond, Times New Roman;
+  text-align:justify;
+  letter-spacing:1px;
+  font-size:20px;
+  padding-left:20px;
+  padding-right:20px;
+  color:white
 }
+
+
+/*about text*/
+p.about-text {
+font-size:1.4vw;
+}
+
+/*link text*/
+p.link-text {
+text-align:center;
+}
+
+
 /*Paragraph element hover effect*/
 p:hover{
-    color:purple;
-    background: 
-      linear-gradient(90deg,#4c0b3e 50%,#000 0) 
-      var(--_p,100%)/200% no-repeat;
-    -webkit-background-clip: text;
-            background-clip: text;
-    transition: .4s;
-    transform:scale(1.01);/*paragraphs increase in size when hovered*/
-  }
-  /*Center class-applies to all elements with class "center"*/
-  .center {
-    text-align:center;
-  }
-  /*Center class hover effect-only affects the github link, and footer*/
-  .center:hover {
-    transition:transform .5s;
-    transform:scale(1.1);
-  }
+  color:black;
+  background: 
+    linear-gradient(90deg,#4c0b3e 50%,#000 0) 
+    var(--_p,100%)/200% no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: .4s;
+  transform:scale(1.01);/*paragraphs increase in size when hovered*/
+}
+/*Center class-applies to all elements with class "center"*/
+.center {
+  text-align:center;
+}
+/*Center class hover effect-only affects the github link, and footer*/
+.center:hover {
+  transition:transform .5s;
+  transform:scale(1.1);
+}
 
-  /*Anchor elements*/
-  a {
-    color:black;
-    cursor:pointer; /*ensure all links change mouse to pointer when hovered or clicked*/
-    text-decoration:underline;
-  }
-  /*Image elements*/
-  img {
-    filter:grayscale(75%);
-    border-radius:8px;
-    max-width:100%;
-    height:340px;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-  }
+/*Anchor elements*/
+a {
+  color:black;
+  cursor:pointer; /*ensure all links change mouse to pointer when hovered or clicked*/
+  text-decoration:underline;
+}
+/*Image elements*/
+img {
+  filter:grayscale(75%);
+  border-radius:8px;
+  max-width:100%;
+  height:340px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 /*Image element hover effects*/
 img:hover {
-  filter:grayscale(25%);
-  transition:transform 1s;
-  transform:scale(1.1);
+filter:grayscale(25%);
+transition:transform 1s;
+transform:scale(1.1);
 }
 /*Media rule used to apply different styles for different devices/types, on screens 576px and smaller images will be 100px tall and centered vertically*/
 @media screen and (max-width:576px) {
-  img {
-    height:100px;
-    margin-top:150px;
-  }
+img {
+  height:100px;
+  margin-top:150px;
+}
 }
 /*Footer styling*/
 footer {
-  padding:5%;
-  background-color:rgb(228, 199, 199);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  
+padding:5%;
+background-color:rgb(228, 199, 199);
+display:flex;
+justify-content:center;
+align-items:center;
+
 }
 /*****End general styling****/
 /*Navbar styling*/
 .Navbar {
-  overflow:hidden;
-  background-color:black;
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:1;
-  -webkit-animation:moveNav 5s;
-  animation:moveNav 5;
+overflow:hidden;
+background-color:black;
+position:fixed;
+top:0;
+width:100%;
+z-index:1;
+-webkit-animation:moveNav 5s;
+animation:moveNav 5;
 }
 /*moveNav animation effect for moving navbar in from left of screen*/
 @keyframes moveNav {
-  from {left:-100vw;}/*Navbar starting off screen to the left*/
-  to {left:0vw;}
+from {left:-100vw;}/*Navbar starting off screen to the left*/
+to {left:0vw;}
 }
 /*Navbar links*/
 .Navbar a {
-  float:left;
-  display:block;
-  color:rgba(241, 237, 237, 0.767);
-  padding:14px 16px;
-  text-decoration:none;
-  font-family: Garamond, Times New Roman, Times, serif;
-  font-size:24px;
-  text-align:center;
-  position:relative;
-  -webkit-animation:moveNavText 5.75s;
-  animation:moveNavText 5.75s;
+float:left;
+display:block;
+color:rgba(241, 237, 237, 0.767);
+padding:14px 16px;
+text-decoration:none;
+font-family: Garamond, Times New Roman, Times, serif;
+font-size:24px;
+text-align:center;
+position:relative;
+-webkit-animation:moveNavText 5.75s;
+animation:moveNavText 5.75s;
 }
 /*move NavText animation effect for moving navbar text from above view to navbar*/
 @keyframes moveNavText {
-  from {top:-100vw;}
-  to {top:0vw;}
+from {top:-100vw;}
+to {top:0vw;}
 }
 
 @media screen and (max-width:576px) {
-  .Navbar a{
-    width:25%;
-    font-size:12px;
-  }
+.Navbar a{
+  width:25%;
+  font-size:12px;
+}
 }
 /*Navbar hover effects*/
 .Navbar a:hover {
-  background-color:#f4f4f4;
-  color:rgb(92, 26, 26);/*font color when navbar elements are hovered*/
-  font-weight:bold;
+background-color:#f4f4f4;
+color:rgb(92, 26, 26);/*font color when navbar elements are hovered*/
+font-weight:bold;
 }
 /*Navbar home button*/
 .Navbar a.active {
-  background-color:darkgray;
+background-color:darkgray;
 }
 /*End navbar styling*/
 
 /*VIDEO STYLING/format*/
 #Computer_Video {
-  position:fixed;
-  right:0;
-  bottom:0;
-  min-width:100%;
-  z-index:-1;
-  filter:grayscale(100%);
+position:fixed;
+right:0;
+bottom:0;
+min-width:100%;
+z-index:-1;
+filter:grayscale(100%);
 }
 
 /*screens under 576px will not display background video*/
 @media screen and (max-width:576px){
-  #Computer_Video {
-    display:none;
-  }
+#Computer_Video {
+  display:none;
+}
 }
 /*Text over video*/
 .Video_Text {
-  background:rgba(0,0,0,0.5);/*Semi transparent background for text to sit over*/
-  color:white;
-  width:100%;
-  padding:20px;
-  position:relative;
-  -webkit-animation:moveVideoText 5.75s;
-  animation:moveVieoText 5.75s;
+background:rgba(0,0,0,0.5);/*Semi transparent background for text to sit over*/
+color:white;
+width:100%;
+padding:20px;
+position:relative;
+-webkit-animation:moveVideoText 5.75s;
+animation:moveVieoText 5.75s;
 }
 /*Causes overlay video text to move up from bottom of page upon page load*/
 @keyframes moveVideoText {
-  from {top:-100vw;}
-  to {to:0vw;}
+from {top:-100vw;}
+to {to:0vw;}
 }
 /***End video styling***/
 
 /***SLIDESHOW STYLING***/
 #Slideshow_Background {
-  background:(255,255,255,0.35);
+background:(255,255,255,0.35);
 }
 
 .mySlides {
-  display:none;/*prevents images from being displayed, using JS instead to display*/
+display:none;/*prevents images from being displayed, using JS instead to display*/
 }
 
 /*Slidehosw section/Container*/
 #Slideshow_Container {
-  width:39.5vw; /*relative sizing of container for the slidehosw set to 39.5% of viewport width*/
-  height:auto; /*height of container is automatically adjusted based on content it is displaying*/
-  padding-top:4%; /*adds padding to top of slideshow container*/
-  position:relative;
-  margin:auto;
+width:39.5vw; /*relative sizing of container for the slidehosw set to 39.5% of viewport width*/
+height:auto; /*height of container is automatically adjusted based on content it is displaying*/
+padding-top:4%; /*adds padding to top of slideshow container*/
+position:relative;
+margin:auto;
 }
 
 /*Remove underline from previous and next buttons on slidehsow*/
 #Slideshow_Container a {
-  text-decoration:none;
+text-decoration:none;
 }
 
 /*Images contained within slideshow*/
 .Slideshow_Images {
-  vertical-align:middle;
-  height:auto; /*height of images is automatically adjusted based on content, if images are different sizes they will display as different sizes*/
-  box-shadow:0px 5px 10px 12px rgba (0,0,0,.75);
-  width:100%'
+vertical-align:middle;
+height:auto; /*height of images is automatically adjusted based on content, if images are different sizes they will display as different sizes*/
+box-shadow:0px 5px 10px 12px rgba (0,0,0,.75);
+width:100%'
 }
 
 /*Next/previous buttons*/
 .Previous, .Next {
-  cursor:pointer;
-  position:absolute; /*makes next and prev buttons relative to slideshow container*/
-  top:50%;
-  width:auto;
-  padding:2vw;
-  color:darkgray;
-  font-weight:bold;
-  font-size:1.5vw;
-  border-radius:0 3px 3px 0; /*adds slightly rounded border on top and bottom right corners*/
-  user-select:none; /*user can't highlight text*/
-  transition:0.6s ease; /*specifies details of hover transition for these elements*/
+cursor:pointer;
+position:absolute; /*makes next and prev buttons relative to slideshow container*/
+top:50%;
+width:auto;
+padding:2vw;
+color:darkgray;
+font-weight:bold;
+font-size:1.5vw;
+border-radius:0 3px 3px 0; /*adds slightly rounded border on top and bottom right corners*/
+user-select:none; /*user can't highlight text*/
+transition:0.6s ease; /*specifies details of hover transition for these elements*/
 }
 
 /*positioning next button on right hand side*/
 .Next {
-  right:0;
-  border-radius:3px 0 0 3px;
+right:0;
+border-radius:3px 0 0 3px;
 }
 
 /*Hover effect on slide show buttons*/
 .Previous:hover, .Next:hover {
-  background-color:rgba (0,0,0,.8); /*makes background of arrows transparent gray*/
-  color:white; /*white when hovered over (arrows)*/
+background-color:rgba (0,0,0,.8); /*makes background of arrows transparent gray*/
+color:white; /*white when hovered over (arrows)*/
 }
 
 /*slideshow text*/
 .text {
-  color:white;
-  padding:0vw;
-  bottom:0; /*sets text to bottom of page*/
-  width:100%; /*element covers full width of image*/
-  text-align:center;
-  font-family:Garamond, Times New Roman;
-  letter-spacing:.5vw;
-  font-size:1.5vw;
-  background-color: rgba(0,0,0,.75); /*slightly transparent black background*/
-  font-weight:bold;
-  border-radius:0px 0px 7px 7px; 
+color:white;
+padding:1vw;
+position:absolute; /*ensures text is positioned within image*/
+bottom:0; /*sets text to bottom of page*/
+width:100%; /*element covers full width of image*/
+text-align:center;
+font-family:Garamond, Times New Roman;
+letter-spacing:.5vw;
+font-size:1.5vw;
+background-color: rgba(0,0,0,.75); /*slightly transparent black background*/
+font-weight:bold;
+border-radius:0px 0px 7px 7px; 
 }
 
 /*styling of dots under slideshow*/
 .dot {
-  cursor:pointer;
-  height:1vw; /*dot sizes are relative to viewport width*/
-  width:1vw;
-  margin:.25vw; /*adds additional spacing between dots*/
-  background-color:white;
-  border-radius:50%; /*makes dots circles by rounding each corner*/
-  display:inline-block; /*allows dots to sit next to eachother instead of on a new line*/
-  transition:background-color 0.6s ease; /*when clicked the dots transition to different color when clicked or hovered on effect defined below*/
-  z-index:1; /*ensures dots displayed above other elements*/
+cursor:pointer;
+height:1vw; /*dot sizes are relative to viewport width*/
+width:1vw;
+margin:.25vw; /*adds additional spacing between dots*/
+background-color:white;
+border-radius:50%; /*makes dots circles by rounding each corner*/
+display:inline-block; /*allows dots to sit next to eachother instead of on a new line*/
+transition:background-color 0.6s ease; /*when clicked the dots transition to different color when clicked or hovered on effect defined below*/
+z-index:1; /*ensures dots displayed above other elements*/
 }
 
 /*hover effect for slideshow dots*/
 .active, .dot:hover {
-  background-color:black;
+background-color:black;
 }
 
 /*Fading animation for slideshow*/
 .fade {
-  animation-name:fade;
-  animation-duration:1.5s;
-  -webkit-animation-name:fade;
-  -webkit-animation-duration:1.5s;
+animation-name:fade;
+animation-duration:1.5s;
+-webkit-animation-name:fade;
+-webkit-animation-duration:1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4;} /*image starts transparent*/
-  to {opacity:1;}/*image ends opaque*/
+from {opacity: .4;} /*image starts transparent*/
+to {opacity:1;}/*image ends opaque*/
 }
 
 @keyframes fade {
-  from {opacity:.4;}
-  to {opacity:1;}
+from {opacity:.4;}
+to {opacity:1;}
 }
 /***End slideshow Styling***/
 
 /***Table styling-this section covers styling for columns and rows within the table, the * is a universal selector that applies this effect to all elements on the page***/
 * {
-  box-sizing:border-box;
+box-sizing:border-box;
 }
 .Column_1 {
-  float:left;
-  width:50%;
-  padding:10px;
-  padding-top:0%;
-  height:400px;
-  background-color:#eab9b9;
+float:left;
+width:50%;
+padding:10px;
+padding-top:0%;
+height:400px;
+background-color:#eab9b9;
 }
 
 @media screen and (max-width: 576px) {
-  .Column_1 {
-    overflow:auto;
-  }
+.Column_1 {
+  overflow:auto;
+}
 }
 
 .Column_2 {
-  float:left;
-  width:50%;
-  padding:10px;
-  padding-top:1.9%;
-  height:400px;
-  background-color:#4d4d4d;
+float:left;
+width:50%;
+padding:10px;
+padding-top:1.9%;
+height:400px;
+background-color:#4d4d4d;
 }
 .Column_tall {
-  padding-top:3.5%;
-  height:450px;
+padding-top:3.5%;
+height:450px;
 }
 .Row:after {
-  content:"";/*leaving this blank allows footer display otherwise it overrites a column*/
-  display:table;
-  clear:both;
+content:"";/*leaving this blank allows footer display otherwise it overrites a column*/
+display:table;
+clear:both;
 }
 
 /***Contact form styling***/
 
 /*Button used to open contact form*/
 .Pop_Up_Button {
-  position:fixed; /*element is positioned relative to viewport and stays in same location no matter what*/
-  bottom:1.75vw;
-  right:1.75vw;
-  width:25vw;
-  background-color:white;
-  color:black;
-  border:solid black;
-  cursor:pointer;
-  -webkit-animation:movePopup 5s; /*Animation for 5 seconds for Safari 4.0-8.0*/
-  animation:movePopup 5s; /*animation set for 5s*/
+position:fixed; /*element is positioned relative to viewport and stays in same location no matter what*/
+bottom:1.75vw;
+right:1.75vw;
+width:25vw;
+background-color:white;
+color:black;
+border:solid black;
+cursor:pointer;
+-webkit-animation:movePopup 5s; /*Animation for 5 seconds for Safari 4.0-8.0*/
+animation:movePopup 5s; /*animation set for 5s*/
 }
 
 /*movePopup animation moves button from off the right side of screen to its fixed location on viewport*/
 @keyframes movePopup {
-  from {right: -40vw;}
-  to {right:1.75vw;}
+from {right: -40vw;}
+to {right:1.75vw;}
 }
 
 @-webkit-keyframes movePopup {
-  from {right:-40vw;}
-  to {right:1.75vw;}
+from {right:-40vw;}
+to {right:1.75vw;}
 }
 
 /*Styling for contact form*/
 .form-popup {
-  z-index:8;
-  display:none; /*will use js to show contact form*/
-  position:fixed;
-  bottom:.5vw;
-  right:5vw;
+z-index:8;
+display:none; /*will use js to show contact form*/
+position:fixed;
+bottom:.5vw;
+right:5vw;
 }
 
 /*form styling*/
 .form-container {
-  max-width:49vw;
-  padding: 1vw;
-  background-color:white;
+max-width:49vw;
+padding: 1vw;
+background-color:white;
 }
 
 /*input fields*/
 .form-container input[type=text] {
-  width:100%;
-  padding:.93vw;
-  margin:.6vw 0 .6vw 0;
-  border:none;
-  background: Gainsboro;
-  font-size:1vw;
+width:100%;
+padding:.93vw;
+margin:.6vw 0 .6vw 0;
+border:none;
+background: Gainsboro;
+font-size:1vw;
 }
 
 /*General styling for all buttons*/
 button {
-   font-family:Georgia, 'Times New Roman', Times, serif;
-   letter-spacing:.3vw;
-   font-size:1.5vw;
-   font-weight:bold;
-   padding:1.5vw;
-   cursor:pointer;
-   width:100%;
-   height:auto;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ letter-spacing:.3vw;
+ font-size:1.5vw;
+ font-weight:bold;
+ padding:1.5vw;
+ cursor:pointer;
+ width:100%;
+ height:auto;
 }
 
 /*hover effect for contact and submit buttons*/
 button:hover, .form-container btn:hover {
-  color:white;
-  background-color:black;
-  transition-duration:1s;
-  -webkit-transition-duration:1s; /*for safari 4.0-8.0 */
-  border-color:silver;
+color:white;
+background-color:black;
+transition-duration:1s;
+-webkit-transition-duration:1s; /*for safari 4.0-8.0 */
+border-color:silver;
 }
 
 /*Submit button*/
 .form-container .btn {
-  background-color:white;
-  color:black;
-  border-color:black;
-  margin-bottom:1vh;
+background-color:white;
+color:black;
+border-color:black;
+margin-bottom:1vh;
 }
 
 /*Close button*/
 .form-container .cancel {
-  background-color:black;
-  color:white;
-  border-color:gray;
+background-color:black;
+color:white;
+border-color:gray;
 }
 
 /*styling for close button on hover*/
 .form-container .cancel:hover {
-  color:white;
-  background-color:darkred;
-  transition-duration:1s;
-  -webkit-transition-duration:1s;
-  border-color:black;
+color:white;
+background-color:darkred;
+transition-duration:1s;
+-webkit-transition-duration:1s;
+border-color:black;
 }
 
 /*above added recently*/
 
 /*input[input=text]targets all text input sections of the contact form*/
 input[type=text] {
-  width:100%;
-  padding:12px;
-  border:1px solid #ccc;
-  border-radius:4px;
-  box-sizing:border-box;
-  margin-top:6px;
-  margin-bottom:16px;
-  resize:vertical;
-  font-family:Garamond, Times New Roman, serif;
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing:border-box;
+margin-top:6px;
+margin-bottom:16px;
+resize:vertical;
+font-family:Garamond, Times New Roman, serif;
 }
 /*Hover effects for input boxes*/
 input[type=text]:hover {
-  box-shadow:0 0 5px #00004d inset; /*creates blue shadow when text hovered in text box*/
+box-shadow:0 0 5px #00004d inset; /*creates blue shadow when text hovered in text box*/
 }
 /*Submit button*/
 input[type=submit] {
-  background-color:black;
-  color:white; /*font color*/
-  font-weight:bold;
-  padding:12px 20px;
-  border:none;
-  border-radius:4px;
-  cursor:pointer;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  font-family:Garamond, Times New Roman, serif;
+background-color:black;
+color:white; /*font color*/
+font-weight:bold;
+padding:12px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+display:block;
+margin-left:auto;
+margin-right:auto;
+font-family:Garamond, Times New Roman, serif;
 }
 
 /*Hover effect for submit button*/
 input[type=submit]:hover {
-  background-color:white;
-  color:black;/*turns font black when hovered*/
-  transform:scale(1.5);
-  transition:transform 1.5s;
+background-color:white;
+color:black;/*turns font black when hovered*/
+transform:scale(1.5);
+transition:transform 1.5s;
 }
 
 /*Form element*/
 form {
-  border-radius:5px;
-  background-color:#f2f2f2;
-  padding:10px;
-  font-family:Garamond, Times New Roman, serif;
+border-radius:5px;
+background-color:#f2f2f2;
+padding:10px;
+font-family:Garamond, Times New Roman, serif;
 }
 /*End contact form styling*/
 
 /***media query selection***/
 /*media rules for paragraph font size different screen size*/
 @media screen and (max-width:527px) {
-  p {
-    font-size:3.75vw;
-  }
+p {
+  font-size:3.75vw;
+}
 }
 
 @media screen and (min-width:528px) and (max-width:660px) {
-  p {
-    font-size:3.5vw;
-  }
+p {
+  font-size:3.5vw;
+}
 }
 
 @media screen and (min-width: 661px) and (max-width:799px) {
-  p {
-    font-size:2.75vw;
-  }
+p {
+  font-size:2.75vw;
+}
 }
 
 @media screen and (min-width:925px) and (max-width:1050px) {
-  p {
-    font-size:2.25vw;
-  }
+p {
+  font-size:2.25vw;
+}
 }
 
 @media screen and (min-width:1051px) and (max-width:1310px) {
-  p {
-    font-size:1.6vw;
-  }
+p {
+  font-size:1.6vw;
+}
 }
 
 @media screen and (min-width:1311px) and (max-width:1535px) {
-  p {
-    font-size:1.75vw;
-  }
+p {
+  font-size:1.75vw;
+}
 }
 
 @media screen and (min-width:1536px) and (max-width:2269px) {
-  p {
-    font-size:1.5vw;
-  }
+p {
+  font-size:1.5vw;
+}
 }
 
 @media screen and (min-width:2270px) {
-  p {
-    font-size:1.35vw;
-  }
+p {
+  font-size:1.35vw;
+}
 }
 
 /*media rule for navbar links for different screen sizes*/
 /*screens 1080px and smaller will have navbar links equally distributed*/
 @media screen and (max-width:1080px) {
-  .Navbar a{
-    width:20%;/*sets each navbar link to 1/5 of navbar*/
-    font-size:2.5vw;
-  }
+.Navbar a{
+  width:20%;/*sets each navbar link to 1/5 of navbar*/
+  font-size:2.5vw;
+}
 }
 
 /*enlarges font of the white text for smaller screens*/
 @media screen and (max-width:1080px) {
-  .white-text {
-    font-size:4.5vw;
-  }
+.white-text {
+  font-size:4.5vw;
+}
 }
 
 /*possibly need to also do 550px for column tall*/
 @media screen and (min-width: 1725px) {
-  .Column_1 {
-    height:550px;
-  }
-  .Column_2 {
-    height:550px;
-  }
+.Column_1 {
+  height:550px;
+}
+.Column_2 {
+  height:550px;
+}
 }
 
 /*Media rule to remove margintop from h1 elements for extra large screens so paragraph fits column*/
 @media screen and (min-width:2000px) {
-  h1 {
-    margin-top:0;
-  }
+h1 {
+  margin-top:0;
+}
 }
 
 
 /*smooth scrolling*/
 html {
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
