@@ -39,6 +39,13 @@ h1:hover {
   color:rgb(246,204,204);
   padding-top:5vh; 
 }
+
+/*Styling for quote hover text*/
+p.white-hover-text:hover {
+  color:white;
+
+}
+
 /*Paragraph elements*/
 p {
   font-family:Garamond, Times New Roman;
@@ -116,6 +123,7 @@ img {
 /*Footer styling*/
 footer {
 padding:5%;
+margin-top:100px;
 background-color:rgb(228, 199, 199);
 display:flex;
 justify-content:center;
