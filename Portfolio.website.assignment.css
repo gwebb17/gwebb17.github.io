@@ -18,10 +18,12 @@ opacity: .1;
 /*Heading 1 elements*/
 h1 {
   text-transform:uppercase;/*Capitalizing all h1 headings*/
-  font-family:Garamond, Times New Roman;
+  font-family:Palatino, URW Palladio L, serif;
   text-align:center;/*Centering all h1 elements*/
-  margin-top:3%;/*Adds a small margin above h1 elements*/
+  margin-top:40px;/*Adds a small margin above h1 elements*/
   color: black;
+  font-size:1.4em;
+  text-shadow:2px 2px 4px dimgrey;
 }
 
 /*Heading 1 element hover effect*/
@@ -37,30 +39,37 @@ h1:hover {
 /*Styling for portfolio title text*/
 .white-text {
   color:rgb(246,204,204);
-  padding-top:5vh; 
+  padding-top:2vh; 
+  font-size:xx-large;
 }
 
-/*Styling for quote hover text*/
-p.white-hover-text:hover {
+
+/*Styling for || Professions || text*/
+.white-hover-text {
   color:white;
+}
+
+p.white-hover-text:hover {
+  color:#eab9b9;
 
 }
 
 /*Paragraph elements*/
 p {
-  font-family:Garamond, Times New Roman;
+  font-family: autosans-serif;
   text-align:justify;
   letter-spacing:1px;
   font-size:20px;
   padding-left:20px;
   padding-right:20px;
-  color:white
+  color:black;
 }
 
 
 /*about text*/
 p.about-text {
-font-size:1.4vw;
+font-size:1.5vw;
+margin-top:40px;
 }
 
 /*link text*/
@@ -69,25 +78,10 @@ text-align:center;
 }
 
 
-/*Paragraph element hover effect*/
-p:hover{
-  color:black;
-  background: 
-    linear-gradient(90deg,#4c0b3e 50%,#000 0) 
-    var(--_p,100%)/200% no-repeat;
-  -webkit-background-clip: text;
-          background-clip: text;
-  transition: .4s;
-  transform:scale(1.01);/*paragraphs increase in size when hovered*/
-}
+
 /*Center class-applies to all elements with class "center"*/
 .center {
   text-align:center;
-}
-/*Center class hover effect-only affects the github link, and footer*/
-.center:hover {
-  transition:transform .5s;
-  transform:scale(1.1);
 }
 
 /*Anchor elements*/
@@ -113,6 +107,31 @@ filter:grayscale(25%);
 transition:transform 1s;
 transform:scale(1.1);
 }
+
+
+/*LinkedIn Badge and Icon*/
+.linkedin-icon {
+  justify-content: center;
+  display:flex;
+  margin-top:-10px;
+  color:#eab9b9;
+}
+
+
+.linkedin-badge-container {
+  display:flex;
+  justify-content: center;
+}
+
+/*GITHUB badge area*/
+.github-logo {
+  height:200px;
+  margin-top:80px;
+}
+
+
+
+
 /*Media rule used to apply different styles for different devices/types, on screens 576px and smaller images will be 100px tall and centered vertically*/
 @media screen and (max-width:576px) {
 img {
@@ -342,6 +361,11 @@ height:400px;
 background-color:#eab9b9;
 }
 
+.github-links {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 @media screen and (max-width: 576px) {
 .Column_1 {
   overflow:auto;
@@ -371,8 +395,8 @@ clear:both;
 /*Button used to open contact form*/
 .Pop_Up_Button {
 position:fixed; /*element is positioned relative to viewport and stays in same location no matter what*/
-bottom:1.75vw;
-right:1.75vw;
+bottom:0.1vw;
+right:0;
 width:25vw;
 background-color:white;
 color:black;
@@ -385,7 +409,7 @@ animation:movePopup 5s; /*animation set for 5s*/
 /*movePopup animation moves button from off the right side of screen to its fixed location on viewport*/
 @keyframes movePopup {
 from {right: -40vw;}
-to {right:1.75vw;}
+to {right:0;}
 }
 
 @-webkit-keyframes movePopup {
