@@ -366,6 +366,12 @@ background-color:#eab9b9;
   margin-bottom:20px;
 }
 
+.github-list-text {
+  display:flex;
+  justify-content: center;
+  margin-top:40px;
+}
+
 @media screen and (max-width: 576px) {
 .Column_1 {
   overflow:auto;
@@ -388,6 +394,21 @@ height:450px;
 content:"";/*leaving this blank allows footer display otherwise it overrites a column*/
 display:table;
 clear:both;
+}
+
+
+/*CLIPBOARD/RESUME*/
+.resume-heading {
+  margin-top:20px;
+}
+
+.clipboard-icon-container {
+  display:flex;
+  justify-content: center;
+}
+
+.clipboard-icon {
+  color:white;
 }
 
 /***Contact form styling***/
