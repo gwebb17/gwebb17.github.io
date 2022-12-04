@@ -121,6 +121,7 @@ transform:scale(1.1);
 .linkedin-badge-container {
   display:flex;
   justify-content: center;
+  margin-top:40px;
 }
 
 /*GITHUB badge area*/
