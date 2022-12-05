@@ -370,7 +370,7 @@ background-color:#eab9b9;
 .github-list-text {
   display:flex;
   justify-content: center;
-  margin-top:40px;
+  margin-top:30px;
 }
 
 @media screen and (max-width: 576px) {
